@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo quieres, te lo vendo</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.js">
+    </script>
+    <script src="./assets/funciones.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lo quieres, te lo vendo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Etiqueca_producto">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estadisticas.html">Estadisticas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 main-content">
+        <h1 class="text-center mb-4" id="Etiqueca_producto">Lo quieres, te lo vendo</h1>
+        
+        <section class="company-extract">
+            <p>
+                Somos un emprendimiento que busca facilitar la venta de productos en línea.<br>
+                Nos dedicamos al rubro del comercio electrónico, permitiendo a nuestros clientes
+                hacer sus pedidos de forma centralizada y segura. Estamos ubicados en Santiago, Chile.
+            </p>
+        </section>
+        
+        <section class="mt-5">
+            <h2 class="text-center mb-4">Nuestros Productos Destacados</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/Celular.webp" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nubia Z60 Ultra</h5>
+                            <p class="card-text">Último modelo con cámara de alta resolución, pantalla AMOLED y batería de larga duración.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$752.195</span>
+                                <button class="btn btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/Laptop.webp" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">MSI Modern 15 B7M-039XES</h5>
+                            <p class="card-text">Potente procesador, 16GB RAM, SSD Nvme de 512GB y pantalla Full HD para todas tus necesidades.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$589.990</span>
+                                <button class="btn btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/smartwatch.webp" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Forerunner® 265 Black</h5>
+                            <p class="card-text">Monitor cardíaco, GPS integrado, resistente al agua y batería que dura hasta 7 días.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-primary fw-bold">$529.990</span>
+                                <button class="btn btn-outline-primary">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p class="mb-0">Equipo: Bastián Blode <br> &copy; Lo quieres, te lo vendo. 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+<script>
+
+    $(document).ready(function() {
+
+    $('#tablaEstadisticas').DataTable();
+
+ });
+
+</script>
+
+</html>

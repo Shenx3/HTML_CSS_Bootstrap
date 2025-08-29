@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo quieres, te lo vendo</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.js">
+    </script>
+    <script src="./assets/funciones.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lo quieres, te lo vendo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Index.html#Etiqueca_producto">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./estadisticas.html">Estadisticas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="container my-5 main-content">
+        <h1 class="text-center mb-4">Estadísticas de Ventas</h1>
+        
+        <section class="statistics-table-section">
+            <h2 class="text-center mb-4">Rendimiento de Productos (Último Trimestre)</h2>
+            <table id="productStats" class="display table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Unidades Vendidas</th>
+                        <th>Ingresos Totales ($)</th>
+                        <th>Margen de Ganancia (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nubia Z60 Ultra</td>
+                        <td>Smartphones</td>
+                        <td>150</td>
+                        <td>112829250</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>MSI Modern 15 B7M-039XES</td>
+                        <td>Laptops</td>
+                        <td>80</td>
+                        <td>47199200</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Forerunner® 265 Black</td>
+                        <td>Wearables</td>
+                        <td>200</td>
+                        <td>105998000</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy S24</td>
+                        <td>Smartphones</td>
+                        <td>120</td>
+                        <td>90000000</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Dell XPS 13</td>
+                        <td>Laptops</td>
+                        <td>60</td>
+                        <td>36000000</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Watch Series 9</td>
+                        <td>Wearables</td>
+                        <td>180</td>
+                        <td>95000000</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Xiaomi Redmi Note 13 Pro</td>
+                        <td>Smartphones</td>
+                        <td>170</td>
+                        <td>85000000</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>HP Spectre x360</td>
+                        <td>Laptops</td>
+                        <td>70</td>
+                        <td>42000000</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>Garmin Fenix 7</td>
+                        <td>Wearables</td>
+                        <td>100</td>
+                        <td>60000000</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>Google Pixel 8 Pro</td>
+                        <td>Smartphones</td>
+                        <td>90</td>
+                        <td>70000000</td>
+                        <td>24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p class="mb-0">Equipo: Bastián Blode <br> &copy; Lo quieres, te lo vendo. 2025</p>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Enlace a funciones.js (aunque no se use directamente aquí, se mantiene por consistencia) -->
+    <script src="./assets/js/funciones.js"></script>
+
+    <!-- CDN de jQuery (requerido por DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- CDN de DataTables JS -->
+    <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Inicializa DataTables en la tabla con id 'productStats' cuando el DOM esté listo
+            $('#productStats').DataTable({
+                // Configuración del lenguaje para personalizar los textos que muestra DataTables
+                "language": {
+                    // Cambia el texto del menú de selección de cantidad de registros por página
+                    // "_MENU_" representa el selector desplegable, luego se agrega "Buscar por página"
+                    "lengthMenu": "_MENU_ Buscar por página",
+                    // Cambia el texto que aparece antes del campo de búsqueda
+                    "search": "Buscar:",
+                    // Cambia el texto que muestra el rango de registros visibles y el total
+                    // _START_: primer registro mostrado, _END_: último registro mostrado, _TOTAL_: total de registros
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ entradas"
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>
