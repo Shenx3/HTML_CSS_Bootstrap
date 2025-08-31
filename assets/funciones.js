@@ -16,10 +16,20 @@ document.addEventListener('DOMContentLoaded', function() {
             clearErrorMessages();
 
             // Validar campo Nombre
-            if (nameInput.value.trim() === '') {
+            const nameValue = nameInput.value.trim();
+            const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]+$/;
+            
+            if (nameValue === '') {
                 displayErrorMessage(nameInput, 'El nombre es obligatorio.');
                 isValid = false;
+            } else if (!nameRegex.test(nameValue)) {
+                displayErrorMessage(nameInput, 'El nombre solo puede contener letras y espacios.');
+                isValid = false;
+            } else if (nameValue.length < 2) {
+                displayErrorMessage(nameInput, 'El nombre debe tener al menos 2 caracteres.');
+                isValid = false;
             }
+
 
             // Validar campo Email
             if (emailInput.value.trim() === '') {
