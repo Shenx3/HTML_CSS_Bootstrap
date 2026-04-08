@@ -1,14 +1,62 @@
-Descripción del Proyecto: Motor de notificaciones en tiempo real diseñado para una red social, optimizado para iteraciones rápidas y cambios modulares cada dos semanas.
-Arquitectura Seleccionada: Detalle del Pipeline Híbrido para IA Modular, justificando su flexibilidad y escalabilidad para este caso específico.
-Requisitos y Configuración del Entorno Técnico:
-Control de Versiones: Git y GitHub
-.
-Contenerización: Docker (Dockerfile incluido) para asegurar que la app funcione igual en cualquier entorno
-.
-Lenguaje: Python 3 para procesamiento y lógica
-.
-Base de Datos: PostgreSQL alojado en Supabase
-.
-Automatización: GitHub Actions para el flujo de CI/CD
-.
-Instrucciones de uso esperadas: Guía paso a paso para clonar el repositorio, configurar el archivo .env (variables de entorno seguras), ejecutar contenedores y monitorear el envío de notificaciones
+# 🚀 Motor de Notificaciones en Tiempo Real
+
+Sistema de notificaciones en tiempo real diseñado para una red social moderna, optimizado para iteraciones rápidas y cambios modulares cada dos semanas.
+
+---
+
+## 📌 Descripción del Proyecto
+
+Este proyecto implementa un **motor de notificaciones en tiempo real**, capaz de procesar eventos dinámicos y distribuir notificaciones de forma eficiente y escalable.
+
+Está pensado para entornos de alta evolución, donde los cambios frecuentes requieren una arquitectura flexible y desacoplada.
+
+---
+
+## 🧠 Arquitectura
+
+### 🔷 Pipeline Híbrido para IA Modular
+
+Se ha seleccionado una arquitectura basada en un **pipeline híbrido**, que combina:
+
+- Procesamiento modular desacoplado
+- Integración de componentes de IA
+- Flujo de eventos escalable
+
+#### ✅ Ventajas
+
+- **Flexibilidad**: Permite modificar módulos sin afectar todo el sistema
+- **Escalabilidad**: Preparado para crecimiento horizontal
+- **Iteración rápida**: Ideal para ciclos de desarrollo quincenales
+- **Extensibilidad**: Fácil integración de nuevos modelos o reglas
+
+---
+
+## ⚙️ Stack Tecnológico
+
+| Componente            | Tecnología                |
+|----------------------|--------------------------|
+| Lenguaje             | Python 3 🐍              |
+| Base de Datos        | PostgreSQL (Supabase)    |
+| Contenerización      | Docker 🐳                |
+| Control de Versiones | Git + GitHub             |
+| CI/CD                | GitHub Actions ⚙️        |
+
+---
+
+## 📦 Requisitos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- Docker
+- Git
+- Python 3.10+ (opcional para desarrollo local)
+
+---
+
+## 🔐 Configuración del Entorno
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
